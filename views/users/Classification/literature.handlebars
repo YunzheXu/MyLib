@@ -1,0 +1,192 @@
+<!--
+<p>this is literature page</p>
+-->
+
+
+
+  <nav class="navbar navbar-expand-md navbar-light bg-faded">
+    <div class="container"> <a class="navbar-brand" href="#">Welcome Back </a> <a> {{user.username}}</a> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item active"> <a class="nav-link" href="#">Setting</a> </li>
+          <li class="nav-item active"> <a class="nav-link" href="#">Help<br></a> </li>
+          <li class="nav-item active"> <a class="nav-link" href="#">Log out<br></a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-1 text-center text-info">MyLib</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--6 buttons for classification  -->
+
+   <div class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <form action="/private/socialscience" method="get">
+              <input type="submit" class="btn btn-outline-info w-100 my-1" value="Social Science"/>
+          </form>     
+        </div>
+        <div class="col-md-4">
+          <form action="/private/art" method="get">
+              <input type="submit" class="btn btn-outline-success w-100 my-1" value="Art"/>
+          </form>     
+        </div>
+        <div class="col-md-4">
+          <form action="/private/languages" method="get">
+              <input type="submit" class="btn btn-outline-warning w-100 my-1" value="Languages"/>
+          </form>     
+        </div> 
+      </div>
+    </div>
+  </div>
+
+   <div class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <form action="/private/technology" method="get">
+              <input type="submit" class="btn btn-outline-info w-100 my-1" value="Technology"/>
+          </form>     
+        </div>
+        <div class="col-md-4">
+          <form action="/private/literature" method="get">
+              <input type="submit" class="btn btn-outline-success w-100 my-1" value="Literature"/>
+          </form>     
+        </div>
+        <div class="col-md-4">
+          <form action="/private/other" method="get">
+              <input type="submit" class="btn btn-outline-warning w-100 my-1" value="Other"/>
+          </form>     
+        </div> 
+      </div>
+    </div>
+  </div>
+
+ <div class="py-3 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form action="/private" method="get">
+         <input type="submit" class="btn btn-outline-primary w-25 " value="HomePage"/>
+          </form> 
+          </div> 
+      </div>
+    </div>
+  </div>
+
+
+ <div class="py-5 " >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12  bg-faded">
+       <h3 class="text-primary ">Literature</h3>      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{lite1.cover}}"  ></div>
+        <div class="col-md-3 my-2">
+        
+          <h4 class="my-2"> {{lite1.name}}</h4>
+          <p>Time: {{lite1.time}}</p>
+        <p>Distance: {{lite1.distance}}</p>
+        <p>Visitors Flow Rate: {{lite1.flowrate}}</p>
+
+         <form action="/private/info/{{lite1.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+     
+        </div>
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{lite2.cover}}"></div>
+        <div class="col-md-3 my-2">
+          <h4 class="my-2"> {{lite2.name}}</h4>
+           <p>Time: {{lite2.time}}</p>
+        <p>Distance: {{lite2.distance}}</p>
+        <p>Visitors Flow Rate: {{lite2.flowrate}}</p>
+         <form action="/private/info/{{lite2.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{lite3.cover}}"  ></div>
+        <div class="col-md-3">
+        
+        <h4 class="my-2"> {{lite3.name}}</h4>
+         <p>Time: {{lite3.time}}</p>
+        <p>Distance: {{lite3.distance}}</p>
+        <p>Visitors Flow Rate: {{lite3.flowrate}}</p>
+
+         <form action="/private/info/{{lite3.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+
+        </div>
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{lite4.cover}}"></div>
+        <div class="col-md-3">
+        <h4 class="my-2"> {{lite4.name}}</h4>
+        <p>Distance: {{lite4.distance}}</p>
+        <p>Visitors Flow Rate: {{lite4.flowrate}}</p>
+
+ <form action="/private/info/{{lite4.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="http://www.architectureartdesigns.com/wp-content/uploads/2013/03/ArchitectureArtDesigns-354.jpg"  ></div>
+        <div class="col-md-3">
+        
+        <h4 class="my-2"> {{lite5.name}}</h4>
+        <p>Distance: {{lite5.distance}}</p>
+        <p>Visitors Flow Rate: {{lite5.flowrate}}</p>
+
+         <form action="/private/info/{{lite5.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+
+
+				
+			</div>
+		</div>
+	</div>
+</div>

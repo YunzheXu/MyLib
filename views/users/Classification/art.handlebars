@@ -1,0 +1,246 @@
+
+<!--
+<p>this is art page</p>
+-->
+
+
+
+
+
+  <nav class="navbar navbar-expand-md navbar-light bg-faded">
+    <div class="container"> <a class="navbar-brand" href="#">Welcome Back </a> <a> {{user.username}}</a> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item active"> <a class="nav-link" href="#">Setting</a> </li>
+          <li class="nav-item active"> <a class="nav-link" href="#">Help<br></a> </li>
+          <li class="nav-item active"> <a class="nav-link" href="#">Log out<br></a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-1 text-center text-info">MyLib</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--6 buttons for classification  -->
+
+   <div class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <form action="/private/socialscience" method="get">
+              <input type="submit" class="btn btn-outline-info w-100 my-1" value="Social Science"/>
+          </form>     
+        </div>
+        <div class="col-md-4">
+          <form action="/private/art" method="get">
+              <input type="submit" class="btn btn-outline-success w-100 my-1" value="Art"/>
+          </form>     
+        </div>
+        <div class="col-md-4">
+          <form action="/private/languages" method="get">
+              <input type="submit" class="btn btn-outline-warning w-100 my-1" value="Languages"/>
+          </form>     
+        </div> 
+      </div>
+    </div>
+  </div>
+
+   <div class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <form action="/private/technology" method="get">
+              <input type="submit" class="btn btn-outline-info w-100 my-1" value="Technology"/>
+          </form>     
+        </div>
+        <div class="col-md-4">
+          <form action="/private/literature" method="get">
+              <input type="submit" class="btn btn-outline-success w-100 my-1" value="Literature"/>
+          </form>     
+        </div>
+        <div class="col-md-4">
+          <form action="/private/other" method="get">
+              <input type="submit" class="btn btn-outline-warning w-100 my-1" value="Other"/>
+          </form>     
+        </div> 
+      </div>
+    </div>
+  </div>
+
+ <div class="py-3 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form action="/private" method="get">
+         <input type="submit" class="btn btn-outline-primary w-25 " value="HomePage"/>
+          </form> 
+          </div> 
+      </div>
+    </div>
+  </div>
+
+
+ <div class="py-5 " >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12  bg-faded">
+       <h3 class="text-primary ">Art</h3>      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{art1.cover}}"  ></div>
+        <div class="col-md-3 my-2">
+        
+          <h4 class="my-2"> {{art1.name}}</h4>
+         <p>Time: {{art1.time}}</p> 
+        <p>Distance: {{art1.distance}}</p>
+        <p>Visitors Flow Rate: {{art1.flowrate}}</p>
+
+         <form action="/private/info/{{art1.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+     
+        </div>
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{art2.cover}}"></div>
+        <div class="col-md-3 my-2">
+          <h4 class="my-2"> {{art2.name}}</h4>
+          <p>Time: {{art2.time}}</p> 
+        <p>Distance: {{art2.distance}}</p>
+        <p>Visitors Flow Rate: {{art2.flowrate}}</p>
+         <form action="/private/info/{{art2.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{art3.cover}}"  ></div>
+        <div class="col-md-3">
+        
+        <h4 class="my-2"> {{art3.name}}</h4>
+        <p>Time: {{art3.time}}</p> 
+        <p>Distance: {{art3.distance}}</p>
+        <p>Visitors Flow Rate: {{art3.flowrate}}</p>
+
+         <form action="/private/info/{{art3.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+
+        </div>
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{art4.cover}}"></div>
+        <div class="col-md-3">
+        <h4 class="my-2"> {{art4.name}}</h4>
+        <p>Time: {{art4.time}}</p> 
+        <p>Distance: {{art4.distance}}</p>
+        <p>Visitors Flow Rate: {{art4.flowrate}}</p>
+
+ <form action="/private/info/{{art4.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{art5.cover}}"  ></div>
+        <div class="col-md-3">
+        
+        <h4 class="my-2"> {{art5.name}}</h4>
+        <p>Time: {{art5.time}}</p> 
+        <p>Distance: {{art5.distance}}</p>
+        <p>Visitors Flow Rate: {{art5.flowrate}}</p>
+
+         <form action="/private/info/{{art5.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+
+        </div>
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{art6.cover}}"></div>
+        <div class="col-md-3">
+        <h4 class="my-2"> {{art6.name}}</h4>
+        <p>Time: {{art6.time}}</p> 
+        <p>Distance: {{art6.distance}}</p>
+        <p>Visitors Flow Rate: {{art6.flowrate}}</p>
+
+ <form action="/private/info/{{art6.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{art7.cover}}"  ></div>
+        <div class="col-md-3">
+        
+        <h4 class="my-2"> {{art7.name}}</h4>
+        <p>Time: {{art7.time}}</p> 
+        <p>Distance: {{art7.distance}}</p>
+        <p>Visitors Flow Rate: {{art7.flowrate}}</p>
+
+         <form action="/private/info/{{art7.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+
+        </div>
+        <div class="col-md-3"><img class="center-block img-fluid d-block mx-auto rounded" src="{{art8.cover}}"></div>
+        <div class="col-md-3">
+        <h4 class="my-2"> {{art8.name}}</h4>
+        <p>Time: {{art8.time}}</p> 
+        <p>Distance: {{art8.distance}}</p>
+        <p>Visitors Flow Rate: {{art8.flowrate}}</p>
+
+ <form action="/private/info/{{art8.id}}" method="get">
+     <input type="submit" class="btn btn-info w-75" value="View More"/>
+ </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+

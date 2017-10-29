@@ -1,0 +1,108 @@
+
+.is-palindrome{
+    color:#0000FF;
+}
+
+.not-palindrome{
+    color:#FF0000;
+}
+
+
+body {
+    background: #FEFEFE;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 15pt;
+}
+
+main {
+    max-width: 75%;
+    margin: auto;
+}
+
+header {
+    border-bottom: 1px solid #AFAFAF;
+}
+
+ h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color:lightseagreen;
+    font-size: 3rem;
+    margin-bottom:10px;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.15rem;
+}
+
+h6 {
+    font-size: 1.05rem;
+}
+
+footer{
+	color:#AFAFAF;
+	font-size:1.05rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.post {
+    width: 75%;
+    border-bottom: 1px dashed #333;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top:20px;
+    margin-bottom:10px;
+    margin-left: 120px;
+
+}
+
+.box {
+    width: 200px;
+    height: 30px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+   
+    margin-bottom:20px;
+    border-radius: 8px;
+   
+}
+.box2 {
+    width: 200px;
+    height: 30px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+   
+    margin-bottom:20px;
+    margin-left:13px;
+    border-radius: 8px;
+   
+}
